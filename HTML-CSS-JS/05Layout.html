@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .header{
+            border: 3px solid black;
+            background-color: lightgray;
+            width: 100%;
+            height: 130px;
+            text-align: center;
+            
+        }
+        .slideshow{
+            border:  4px solid grey;
+            background-color: lightsalmon;
+            height: 300px;
+            width:100%;
+            text-align: center;
+            margin-top: 10px;
+
+
+        }
+        .sidebar{
+            border: 3px solid gray;
+            width: 30%;
+            height: 300px;
+            background-color: lightgreen;
+            float: right;
+            text-align: center;
+            margin-top: 10px;
+            
+            
+
+
+        }
+        .content{
+            border: 3px solid lightcoral;
+            width: 60%;
+            height: 300px;
+            width: 68%;
+            background-color: lightslategray;
+            margin-top: 10px;
+            text-align: center;
+
+            
+        }
+        .footer{
+            border: 3px solid blue;
+            width: 100%;
+            height: 200px;
+            background-color: lightsteelblue;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        ul{
+            list-style:none ;
+        }
+
+        li{
+            display: inline;
+            font-size: large;
+            margin:10px;
+            cursor: pointer;
+            border: 1px solid white;
+            padding: 3px;
+        }
+    /*using pseudo class -> hover*/
+        li:hover{
+            color: white;
+            background-color: red;
+            border: 3px solid white;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Layout</h1>
+    <div class="header">
+        <h1>Header</h1>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About Us</li>
+            <Li>Contact Us</Li>
+        </ul>
+    </div>
+    <div class="slideshow">Slideshows</div>
+    <div class="sidebar">Sidebar</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+
+</body>
+</html>

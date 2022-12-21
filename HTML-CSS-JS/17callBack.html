@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call back function</title>
+    <style>
+        .box{
+        border:  5px dotted black;
+        text-align: center;
+        margin: 50px;
+        background-color: lightblue;
+        padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Callback Function</h1>
+    <!-- <h2 id="clock">hh:mm:ss</h2> -->
+    <!-- span untuk leatk attri for component tanpa tp masih satu line -->
+    <h2 id="clock" class="box" > 
+        <span id="hh" style="color: red;">hh</span>
+        <span id="mm" style="color: green;">mm</span>
+        <span id="ss" style="color: blue;">ss</span>
+    </h2>
+    <script>
+        function welcome(name) {
+            console.log(`Welcome to ${name}`);
+
+        }
+
+        welcome("airasia academy")
+
+        //pass function as a parameter  --> callback function
+        let count = 0
+        function callMe(){
+            console.log( count + " I am called");
+            count++ 
+        }
+        //execute callMe() ecery 4 secs
+        //setInterval(callMe, 1000) // dkt call me takde () , so kekurangannya takde parameter
+
+        // alternative
+        // setInterval(function (){
+        //     console.log( count + " I am called");
+        //     count++
+
+
+        // },1000)
+
+        let score= 8
+        //can funtion be initialised as a value to the variable
+        let helloFun = function(msg){
+            console.log( msg + " hello function...");
+
+
+        }
+        helloFun("hafiz,")
+
+        // arrow function
+         let arrowFun = (msg) => {
+            console.log( msg + " hello function...");
+         }
+
+         arrowFun("hahahah")
+
+
+        //  project
+
+        setInterval(function(){
+            let current = new Date
+            
+            let date = current.getDate()
+            let hour = current.getHours()
+            let minute = current.getMinutes()
+            let second = current.getSeconds()
+
+            // let dRef = document.getElementById("hh")
+            let hRef = document.getElementById("hh")
+            let mRef = document.getElementById("mm")
+            let sRef = document.getElementById("ss")
+
+            hRef.innerText = hour + " :"
+            mRef.innerText = minute + " :"
+            sRef.innerText = second
+
+
+
+
+        //get current date
+
+       //get hours from current
+
+       //get minute from current
+
+       //get second from current
+
+       //get reference to element with id = "hh"
+
+        //get reference to element with id = "mm"
+
+        //get reference to element with id = "ss"
+
+        //update inner text of one with ref to id = "hh" 
+
+        //update inner text of one with ref to id = "mm" 
+
+        //update inner text of one with ref to id = "ss" 
+        
+       }, 1000)
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

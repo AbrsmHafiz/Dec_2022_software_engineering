@@ -1,0 +1,30 @@
+.likeStyle{
+    color: black;
+    border: 2px solid lightblue;
+    border-radius: 6px;
+    padding: 2px;
+
+    
+}
+
+.centre{
+
+    text-align: center;
+}
+
+
+.orange{
+
+    color: #1d4e89;
+}
+
+.yellow{
+
+    color: #f79256;
+}
+
+.whiteBackground{
+    background-color: antiquewhite;
+    
+
+}

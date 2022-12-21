@@ -1,0 +1,23 @@
+.centre{
+    text-align: center;
+}
+
+.grey{
+    color: #aeaeae;
+}
+
+.yellow{
+    color: #FCF02D;
+}
+
+.greyBackground{
+    background-color: #aeaeae;
+    border-radius: "100px";
+    padding: "5px";
+    
+}
+
+.rightSide{
+
+    text-align: right;
+}

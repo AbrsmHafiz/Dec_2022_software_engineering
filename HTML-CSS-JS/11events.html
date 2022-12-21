@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            text-align: center;color: blue;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <h1>Lets do some events in JS now!!</h1>
+    <button onclick="clicked()">I am click</button>
+    <hr>
+    <button ondblclick="doubleclick()">Double click me!</button>
+    
+    <div class="box" onclick="boxClicked()" onmousemove="mouseMoved()">
+        i am in box
+    </div>
+    <hr>
+
+    <h1 style="text-align: center;">Contact us</h1>
+    <form>
+        Name:
+        <br>
+        <input title="key in ur name not my name"type="text" name="" id="" onchange="captureName(event)">
+        <br>
+        Email:
+        <br>
+        <input title="yezza, now i can hack ur email ;)" type="email" name="" id="">
+        <br>
+        Message:
+        <br>
+        <textarea title="Do not put anything nonsense" name="" id="" cols="30" rows="10"></textarea>
+        <br>        
+        <button>Submit</button>
+        <br>
+        
+
+    </form>
+    
+    
+    <script>
+        function clicked(){
+            console.log("I am clicked");
+        }
+        function doubleclick(){
+            console.log("I am double click");
+        }
+        let n=0
+        function boxClicked(){
+            console.log("Box clicked " + n++);
+        }
+        let x = 0
+        function mouseMoved(){
+            console.log("Mouse moved " + x++);
+  
+        }
+        function captureName(event){ //take value and put in console log
+            console.log(event.target.value);
+            console.log(event);
+        }
+    </script>
+
+    
+</body>
+
+</html>

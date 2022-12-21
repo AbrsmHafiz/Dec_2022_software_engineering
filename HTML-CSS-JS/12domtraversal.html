@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM traversal</title>
+    
+    <style>
+        .exciting{
+            color: darkblue;
+            text-shadow: 2px 1px grey;
+        }
+        .moreExciting{
+            color: darkblue;
+            text-shadow: 2px 1px lightgreen;
+            border: 2px solid green;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>DOM Traversal</h1>
+    <ol>
+        <li>
+            HTML  
+            <button onclick="changeli()">Change Me</button>
+        </li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+    </ol>
+    <ol id="part2">
+        <li id="item1">DS & Algo</li>
+        <li id="item2">Go lang</li>
+    </ol>
+    <h1 class="exciting">Find elements by classNames</h1>
+    <ol>
+        <li>DOM is interesting</li>
+        <li class="exciting">Java Script is easy</li>
+        <li>One must learn ES6 after learning classic JS</li>
+    </ol>
+    <h1>This is one</h1>
+    <p class="exciting">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, iusto? Ut a dolore ullam aliquam dolor impedit dignissimos, iste delectus doloribus, itaque eius excepturi, veritatis mollitia laborum aut saepe iure.</p> 
+    <br>
+    <h1>This is two</h1>
+    <p class="exciting">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at aliquam excepturi dignissimos atque quam maxime voluptatum provident explicabo error nulla facere fugit obcaecati ratione voluptatem mollitia nemo, dolore necessitatibus!</p>
+    <br>
+    <h1>This is three</h1>
+    <p class="exciting">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis omnis amet, maiores libero accusantium alias voluptas, perspiciatis ratione expedita iste quos repudiandae sit eaque, cupiditate vel autem voluptate dolorem fuga!</p>
+    <hr>
+    <button onclick="closeMe()">Close Window</button>
+    <script src="/script/05dom.js"></script>
+
+
+</body>
+</html>

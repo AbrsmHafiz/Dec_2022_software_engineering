@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Programming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- 
+Stock footage provided by <a class="link author-link-popup" target="_blank" href="https://www.videvo.net/profile/videvo">Videvo</a>,
+downloaded from <a class="videvo-redirect" target="_blank" href="https://www.videvo.net">videvo.net</a>
+ -->
+
+<body>
+    <section class="showcase">
+        <div class="videoContainer">
+            <video id="videobg" autoplay="true" loop="true" src="video/videoNew1.mp4">
+            </video>
+        </div>
+        <div class="content">
+            <h1><i>Welcome</i></h1>
+            <h3>Dear Guests, welcome aboard!</h3>
+            <a href="#about" class="btn">Enter</a>
+            <br>
+            <a href="#" class="btn" onclick="changevideobg(1)">CITY</a>
+            <a href="#" class="btn" onclick="changevideobg(2)">JAZZ</a>
+            <a href="#" class="btn" onclick="changevideobg(3)">OCEAN</a>
+            <a href="#" class="btn" onclick="changevideobg(4)">BUILDINGS</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, ullam! Quod omnis totam dolore ad nulla consequuntur sapiente officiis non! Exercitationem saepe quas corrupti libero incidunt vitae, corporis ipsa molestias!</p>
+        <h2>Follow us on social media</h2>
+        <div class="social">
+            <a href="" class="twitter"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
+            <a href="" class="fb"><i class="fa fa-facebook-square fa-4x" aria-hidden="true" ></i></a>
+            <a href="" class="ig"><i class="fa fa-instagram fa-4x" aria-hidden="true"></i></a>
+            <a href="" class="youtube"><i class="fa fa-youtube-square fa-4x" aria-hidden="true"></i></a>
+        </div>
+    </section>
+    <script>
+        //01. get elemnt by id
+        //02. set attribute ("attributeName":"value")
+        let vref = document.getElementById("videobg")
+        function changevideobg(n){
+            vref.setAttribute("src", "video/videobg"+n+".mp4")
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+</head>
+<body>
+    <h1 class="highlight">Date and time</h1>
+    <h2 id="present"></h2>
+    <h3 id="date">Date = 0</h3>
+    <h3 id="month">Month = 0</h3>
+    <h3 id="year">Year = 0</h3>
+    <h3 id="time">Time = 0</h3>
+
+
+
+    <script>
+
+        let pRef = document.getElementById("present")
+        let current = new Date()
+        console.log(current);
+        pRef.innerText = current
+
+        let dateRef = document.getElementById("date")
+        let mRef = document.getElementById("month")
+        let yRef = document.getElementById("year")
+        let tRef = document.getElementById("time")
+
+        let date = current.getDate()
+        let month = current.getMonth()
+        let year = current.getFullYear()
+        let time = current.getHours()
+        let min = current.getMinutes()
+        let sec = current.getSeconds()
+        
+
+        dateRef.innerText = `Date = ${date}`
+        mRef.innerText = `Mont =  ${month}`
+        yRef.innerText = `Year = ${year}`
+        tRef.innerText = `Time = ${time}:${min}:${sec}`
+
+        // other option to getElementById is querySelector
+        // id -> "#id"
+        // class -> ".className"
+        // tag -> "h1"
+        let check = document.querySelector.innerText(".highlight")
+
+        
+
+    </script>
+
+</body>
+</html>

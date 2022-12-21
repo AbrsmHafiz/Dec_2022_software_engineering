@@ -1,0 +1,13 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+
+body{
+
+    background-color: aqua;
+    background-image: url(images/pexels-ylanite-koppens-796602.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   /*recommended size is 200-300kb*/
+}
